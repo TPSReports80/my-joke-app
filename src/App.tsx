@@ -16,7 +16,6 @@ function App() {
         "https://mwks-joke-service.azurewebsites.net/api/joke/random"
       );
       const data = await res.json();
-
       // force timeout to show loading state
       setTimeout(() => {
         setJokeBody((prevState) => ({
